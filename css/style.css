@@ -1,0 +1,225 @@
+/*---- GLOBAL ----*/
+
+html,
+body,
+.container-table {
+	height: 100%;
+	box-sizing: border-box;
+
+}
+
+body {
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.45), rgba(255,255,255,0.45)), url('../img/vintage.jpeg');
+	background: -moz-linear-gradient(left, rgba(0,0,0,0.45), rgba(255,255,255,0.45)), url('../img/vintage.jpeg');
+	background: -o-linear-gradient(left, rgba(0,0,0,0.45), rgba(255,255,255,0.45)), url('../img/vintage.jpeg');
+	background: linear-gradient(left, rgba(0,0,0,0.45), rgba(255,255,255,0.45)), url('../img/vintage.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+@font-face{
+	font-family: pixels;
+	src: url(../fonts/Blox2.ttf);
+}
+
+#logo {
+	height: 100px;
+	width: 100px;
+}
+
+.container {
+	flex: 1 0 auto;
+}
+
+/*---- NAVBAR ----*/
+
+.navbar-toggle {
+	background: transparent;
+	border: none;
+}
+.navbar-toggle:hover {
+	background: transparent;
+}
+
+.icon-bar {
+	background-color: black;
+}
+
+.navbar-default {
+	background: rgba(255,255,255,0.3);
+	border-bottom: 0;
+	/*min-height: 100px;*/
+}
+
+#myNavbar {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+}
+
+
+#myNavbar a {
+	color: black;
+	position: relative;
+	padding: 0 0 5px;
+	margin: 15px;
+
+}
+
+#myNavbar a:after {
+ 
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 3px solid red;
+  color: white;
+  transition: 0.5s ease-in;
+
+}
+
+#myNavbar a:hover {
+	background-color: transparent;
+}
+
+#myNavbar a:hover:after {
+	width: 100%;
+
+
+}
+
+#myNavbar ul {
+	margin-top: 10px;
+}
+
+
+
+/*
+---- HOME ----
+*/
+
+.container-table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.caption h1 {
+	font-family: pixels;
+	font-size: 80px;
+	padding: 10px;
+	color: black;
+	white-space: nowrap;
+	margin: 0 auto;
+	overflow: hidden;
+	border-right: 3px solid black;
+	animation: type 4.5s steps(40, end), caret .75s step-end infinite;
+}
+
+
+
+/*
+---- CONTACT
+*/
+
+
+.main {
+	margin-top: 100px;
+}
+
+.myForm {
+	background: rgba(255,255,255,0.6);
+	box-shadow: 5px 5px rgba(0,0,0,0.6);
+}
+
+.myForm h1 {
+	font-family: pixels;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+label {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.myForm textarea {
+	height: 200px;
+}
+.myForm input[placeholder],
+.myForm textarea[placeholder]
+{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.myForm .btn-default {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+}
+
+.social-links 
+{
+	background: rgba(255,255,255,0.6);
+	box-shadow: 5px 5px rgba(0,0,0,0.6);
+	padding: 20px;
+}
+
+.social-links h1
+{
+	font-family: pixels;
+	font-size: 40px;
+	color: black;
+	padding-bottom: 20px;
+}
+
+
+.fa
+{
+	color: black;
+}
+
+.fa:hover 
+{
+	color: skyblue;
+}
+
+/*.myForm input[type="email"],
+.myForm input[type="name"]
+{
+	box-sizing: border-box;
+	outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+
+}*/
+
+
+/*---- FOOTER ----*/
+
+footer {
+	width: 100%;
+	background: rgba(0,0,0,0.3);
+	height: 70px;
+}
+
+footer p {
+	margin-top: 20px;
+	color: black;
+}
+
