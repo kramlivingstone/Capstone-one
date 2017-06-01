@@ -52,7 +52,7 @@ hr
 {
 	width: 4px;
 	height: 100px;
-	background-color: #3498DB;
+	background-color: #F1654C;
 }
 
 .col-centered 
@@ -282,15 +282,50 @@ hr
 
 #avatar
 {
-	height: 250px;
-	width: 250px;
-	padding: 0;
+	/*max-height: 300px;
+	max-width: 270px;*/
+	max-width: 250px;
+
 }
 .avatar
 {	
 	height: 100%;
 	width: 100%;
-	border-radius: 100%;
+	border: 5px solid #37575C;
+}
+
+.about-me
+{
+	background: #37575C;
+	border: 5px solid #44BBFF;
+	/*margin-left: 10px;*/
+	/*box-sizing: border-box;*/
+}
+
+.about-me h1
+{
+	color: #44BBFF;
+}
+
+.about-me p
+{
+	text-indent: 50px;
+	color: white;
+}
+
+.about-me .tuitt
+{
+	color: #67d1e3;
+}
+
+.about-me .sr
+{
+ 	color: #EB6361;
+}
+
+.about-me .sti
+{
+	color: #EDD834;
 }
 
 
@@ -368,26 +403,31 @@ img
 	width: 100%;
 }
 
-.social-links
+/*.social-links
 {
 	padding: 30px;
 }
 
+#social-header
+{
+	border: 5px solid #17D6F5;
+	padding: 5px;
+	background: #00587A;
+}
+
 .social-links h1
 {
-	border: 5px solid #26C281;
-	padding: 5px;
-	background: #26C281;
+	
 	color: white;
 }
 
 .social-links .social-media
 {
-	border: 5px solid #26C281;
+	border: 5px solid #17D6F5;
 	padding: 15px;
-	background: #26C281;
+	background: #00587A;
 	color: white;
-	width: 100%;
+	
 }
 
 .social-links a
@@ -415,7 +455,46 @@ img
 {
 	color: black;
 }
+*/
 
+.social-links h1
+{
+	margin-bottom: 30px;
+	color: black;
+}
+
+.social-links a
+{
+	display: block;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+.social-links a:hover
+{
+
+}
+
+.social-links .fb:hover
+{
+	color: #4267b2;
+}
+
+.social-links .twitter:hover
+{
+	color: #1da1f2;
+}
+
+.social-links .insta:hover
+{
+	color: #d10869;
+}
+
+.social-links .google-plus:hover
+{
+	color: #F1654C;
+}
 
 
 /**********************
@@ -490,7 +569,17 @@ footer ul li .fa:hover
 /**********************
 ---- MEDIA QUERIES ----
 ***********************/
+@media screen and (max-width: 1024px)
+{
+	/*
+	----- PAGE: ABOUT -----
+	*/
 
+	#avatar
+	{
+		margin-bottom: 20px;
+	}
+}
 
 @media screen and (max-width: 768px)
 {
@@ -536,6 +625,15 @@ footer ul li .fa:hover
 		height: 35px;
 		background-color: #44BBFF;
 		transition: 0.5s;
+	}
+
+	/*
+	----- PAGE: ABOUT -----
+	*/
+
+	#avatar
+	{
+		margin-bottom: 20px;
 	}
 	
 
