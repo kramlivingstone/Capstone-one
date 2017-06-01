@@ -12,16 +12,17 @@
     <!-- External Stylesheet -->
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--<link rel="stylesheet" href="css/animation.css">-->
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
 
     <!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:700|Righteous" rel="stylesheet">
 
-	<!-- Font-Awesome -->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<!--  NAVIGATION -->
+	<nav class="navbar navbar-fixed-top" data-spy="affix" data-offset-top="100">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -29,7 +30,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="" alt="logo"></a>
+				<a class="navbar-brand" href="#">KRAM</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
@@ -40,76 +41,105 @@
 				</ul>
 			</div>
 		</div>
-	</nav>
-	<div class="container main">
+	</nav> <!-- /NAVIGATION -->
+
+	<div class="container-fluid main">
 		<div class="row">
-			<div class="col-md-6 myForm">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>Say Hello...</h1>
-					</div>
+			<div class="container">
+				<div class="col-xs-12 col-sm-12 col-md-6 direct-message">
+					<h1 class="section-header">Let's Talk...</h1>
+					<p>If you like my work and have some cool project to work on, just send me a direct message below.</p>
+					<form>
+						<div class="form-group"> <!-- Name field -->
+							<label class="control-label" for="name">Name</label>
+							<input class="form-control" id="name" name="name" type="text" placeholder="Enter your Full Name..." />
+						</div>
+						<div class="form-group"> <!-- Email field -->
+							<label class="control-label requiredField" for="email">Email<span class="asteriskField">*</span></label>
+							<input class="form-control" id="email" name="email" type="text" placeholder="Enter your E-mail Address..."/>
+						</div>
+						<div class="form-group"> <!-- Subject field -->
+							<label class="control-label " for="subject">Subject</label>
+							<input class="form-control" id="subject" name="subject" type="text" placeholder="Write a Subject..."/>
+						</div>
+						<div class="form-group"> <!-- Message field -->
+							<label class="control-label " for="message">Message</label>
+							<textarea class="form-control" cols="40" id="message" name="message" rows="10" placeholder="Say Something...."></textarea>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-default " name="submit" type="submit">Send</button>
+						</div>
+					</form>	
+					<div class="rubiks">
+						<img src="img/rubiks.png" alt=rubiks-cube>
+					</div>	
 				</div>
-				<form class="form-horizontal">
-					<div class="form-group">
-						<label class="control-label col-sm-2" for="email">E-mail:</label>
-						<div class="col-sm-10">
-							<input type="email" class="form-control" id="email" placeholder="Enter Email Address...">
+				<div class="col-xs-12 col-sm-12 col-md-6 social-links">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<h1 class="text-center">You may contact me via...</h1>
 						</div>
 					</div>
-					<div class="form-group">
-						<label class="control-label col-sm-2" for="name">Name:</label>
-						<div class="col-sm-10">
-							<input type="name" class="form-control" id="name" placeholder="Enter Full Name...">
+					<div>
+						<hr>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 text-center social-media">
+							<h2>Social Media</h2>
+							<a href="https://www.facebook.com/kramlivingstone">Facebook</a>
+							<span>&verbar;</span>
+							<a href="https://www.twitter.com/@kramlivingstone">Twitter</a>
+							<span>&verbar;</span>
+							<a href="https://www.instagram.com/@kramlivingstone">Instagram</a>
 						</div>
 					</div>
-					<div class="form-group">
-						<label class="control-label col-sm-2" for="name">Subject:</label>
-						<div class="col-sm-10">
-							<input type="name" class="form-control" id="subject" placeholder="Enter Subject...">
+					<div>
+						<hr>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 text-center social-media">
+							<h2>Other Contact Info</h2>
+							<a href="tel:+639778154243"><i class="fa fa-mobile"></i> +63977-815-4243</a>
+							<span>&verbar;</span>
+							<a href="mailto:kramlivingstone@yahoo.com.ph"><i class="fa fa-envelope"></i> kramlivingstone@yahoo.com.ph</a>
+							<span>&verbar;</span>
+							<i class="fa fa-map-marker"></i><span> MANILA, PH</span>
 						</div>
 					</div>
-					<div class="form-group">
-						<div class="col-sm-2"></div>
-						<div class="col-sm-10">
-							<textarea type="subject" class="form-control" id="subject" placeholder="Enter Message..."></textarea>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-2"></div>
-						<div class="col-sm-10">
-							<button type="submit" class="btn btn-default">Submit</button>
-						</div>
-					</div>
-				</form>
+				</div>		
+					
+					<!-- <div>
+						<hr>
+					</div> -->
+					<!-- <h1 class="section-header">Contact Info...</h1>
+					<ul>
+						<li><a href="tel:+639778154243"><i class="fa fa-mobile"></i> +63977-815-4243</a></li>
+						<li>&verbar;</li>
+						<li><a href="mailto:kramlivingstone@yahoo.com.ph"><i class="fa fa-envelope"></i> kramlivingstone@yahoo.com.ph</a></li>
+						<li>&verbar;</li>
+						<li><i class="fa fa-map-marker"></i><span> MANILA, PH</span></li>
+					</ul> -->
+				</div>
 			</div>
 		</div>
-		<div class="row">
-				<div class="col-md-6"></div>
-					<div class="col-md-6 social-links">
-						<h1>Social Media...</h1>
-						<div class="row">
-							<div class="col-md-3">
-								<a href="https:/facebook.com/kramlivingstone" title="https:/facebook.com/kramlivingstone"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
-							</div>
-							<div class="col-md-3">
-								<a href="https://twitter.com/@kramlivingstone" title="https://twitter.com/@kramlivingstone"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-							</div>
-							<div class="col-md-3">
-								<a href="https://www.instagram.com/kramlivingstone/" title="https://www.instagram.com/kramlivingstone/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-							</div>
-							<div class="col-md-3">
-								<a href="https://plus.google.com/u/0/117241592504336216648" title="https://plus.google.com/u/0/117241592504336216648"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></a>
-							</div>
-						</div>	
-					</div>
-		</div>
 	</div>
-	<footer class="container-fluid">
-		<div class="container text-center">
-			<p>Copyright &copy; 2017.Mark Livingstone</p>
-		</div>
-	</footer>
 
+	<!-- FOOTER -->
+	<footer>
+		<div class="container-fluid text-center">
+			<p>Copyright &copy; 2017 &middot; Mark Livingstone</p>
+			<ul>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li>&verbar;</li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li>&verbar;</li>
+				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li>&verbar;</li>
+				<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</footer>  <!-- /FOOTER -->
+	
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
