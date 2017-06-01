@@ -161,7 +161,7 @@ hr
 
 .icon-bar 
 {
-	background-color: #26C281;
+	background-color: white;
 }
 
 .navbar 
@@ -238,14 +238,14 @@ hr
 .explore .btn-default
 {
 	margin-top: 50px;
-	border: 5px solid #26C281;
+	border: 5px solid #44BBFF;
 	border-radius: 0;
 	color: black;
 	font-size: 20px;
 	font-weight: bold;
 	width: 190px;
 	height: 50px;
-	background-color: #26C281;
+	background-color: #44BBFF;
 	box-sizing: border-box;
 	transition: 0.5s;
 }
@@ -257,7 +257,15 @@ hr
 
 .thumbnail
 {
-	background: #F0F1F5;
+	background: #3F3F3F;
+	border: 5px solid #3F3F3F;
+	padding: 10px;
+	border-radius: 0;
+}
+
+.thumbnail p
+{
+	color: white;
 }
 
 .thumbnail h3
@@ -268,11 +276,11 @@ hr
 .caption .btn-default
 {
 	margin-top: 10px;
-	border: 3px solid #66CC99;
-	background: #66CC99;
+	border: 3px solid #44BBFF;
+	background: #44BBFF;
 	border-radius: 0;
 	font-size: 15px;
-	color: #F0F1F5;
+	color: black;
 }
 
 /**********************
@@ -300,7 +308,7 @@ hr
 
 .direct-message
 {
-	background-color: #37575C;
+	background-color: #3F3F3F;
 	border: 5px solid #17D6F5;
 	padding: 30px;
 	position: relative;
@@ -534,7 +542,7 @@ footer ul li .fa:hover
 		font-weight: bold;
 		width: 150px;
 		height: 40px;
-		background-color: #26C281;
+		background-color: #44BBFF;
 		transition: 0.5s;
 	}
 	
