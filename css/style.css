@@ -200,7 +200,8 @@ hr
 	color: #BD3C4E;
 }
 
-#myNavbar a:hover 
+#myNavbar a:hover,
+#myNavbar a:focus
 {
 	background-color: transparent;
 }
