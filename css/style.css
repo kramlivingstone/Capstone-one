@@ -1,5 +1,5 @@
 /**********************
-   ---- GLOBAL ----
+---- GLOBAL ----
 ***********************/
 html,
 body,
@@ -118,7 +118,7 @@ hr
 }
 
 /**********************
-   ---- NAVBAR ----
+---- NAVBAR ----
 ***********************/
 .navbar 
 {
@@ -194,14 +194,13 @@ hr
   content: '';
   border-bottom: 3px solid #3498DB;
 }
- 
+
 .selected a
 {
 	color: #BD3C4E;
 }
 
-#myNavbar a:hover,
-#myNavbar a:focus
+#myNavbar a:hover 
 {
 	background-color: transparent;
 }
@@ -212,7 +211,7 @@ hr
 }
 
 /**********************
- ---- PAGE: HOME ----
+---- PAGE: HOME ----
 ***********************/
 .banner-caption h1 
 {
@@ -228,8 +227,7 @@ hr
 	transition: 0.9s; /*---- For Resizing ----*/
 }
 
-.explore .btn-default,
-.explore .btn-default:focus
+.explore .btn-default
 {
 	margin-top: 50px;
 	border: 5px solid #44BBFF;
@@ -267,8 +265,7 @@ hr
 	color: #44BBFF;
 }
 
-.caption .btn-default,
-.caption .btn-default:focus
+.caption .btn-default
 {
 	margin-top: 10px;
 	border: 3px solid #44BBFF;
@@ -279,7 +276,7 @@ hr
 }
 
 /**********************
- ---- PAGE: ABOUT ----
+---- PAGE: ABOUT ----
 ***********************/
 
 
@@ -301,8 +298,7 @@ hr
 {
 	background: #37575C;
 	border: 5px solid #44BBFF;
-	margin-bottom: 10px;
-	padding: 10px;
+	/*margin-left: 10px;*/
 	/*box-sizing: border-box;*/
 }
 
@@ -380,8 +376,7 @@ hr
 	transition: 0.7s;
 }
 
-.direct-message .btn-default,
-.direct-message .btn-default:focus
+.direct-message .btn-default
 {
 	float: right;
 	padding: 10px;
@@ -391,8 +386,6 @@ hr
 	border: 5px solid #17D6F5;
 	background-color: #17D6F5;
 }
-
-
 
 .rubiks
 {
@@ -622,8 +615,7 @@ footer ul li .fa:hover
 	{
 		font-size: 60px;
 	}
-	.explore .btn-default,
-	.explore .btn-default:focus
+	.explore .btn-default
 	{
 		margin-top: 40px;
 		color: black;
